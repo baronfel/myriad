@@ -22,7 +22,7 @@
     <Compile Include="Tests.fs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="../../src/Myriad.Plugins/Myriad.Plugins.fsproj" PrivateAssets="All" />
+    <ProjectReference Include="../../src/Myriad.Plugins/Myriad.Plugins.Fields/Myriad.Plugins.Fields.fsproj" PrivateAssets="All" />
     <ProjectReference Include="../Myriad.Plugins.Example1/Myriad.Plugins.Example1.fsproj" PrivateAssets="All" />
   </ItemGroup>
 
@@ -34,7 +34,7 @@
   <!-- include to enable the generation of myriad output -->
   <Import Project="..\..\src\Myriad.Sdk\build\Myriad.Sdk.targets" />
   <!-- include core plugin -->
-  <Import Project="..\..\src\Myriad.Plugins\build\Myriad.Plugins.InTest.props" />
+  <Import Project="..\..\src\Myriad.Plugins\Myriad.Plugins.Fields\build\Myriad.Plugins.InTest.props" />
   <!-- include example1 plugin -->
   <Import Project="..\Myriad.Plugins.Example1\build\Myriad.Plugins.Example1.InTest.props" />
   <!-- paket -->
